@@ -6,21 +6,12 @@
       <h4 class="text-gray-600">Model Form</h4>
 
       <div class="mt-4">
-        <div
-          class="w-full max-w-sm overflow-hidden bg-white border rounded-md shadow-md"
-        >
+        <div class="w-full max-w-sm overflow-hidden bg-white border rounded-md shadow-md">
           <form>
-            <div
-              class="flex items-center justify-between px-5 py-3 text-gray-700 border-b"
-            >
+            <div class="flex items-center justify-between px-5 py-3 text-gray-700 border-b">
               <h3 class="text-sm">Add Category</h3>
               <button>
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -35,15 +26,8 @@
               <label class="text-xs">Name</label>
 
               <div class="relative mt-2 rounded-md shadow-sm">
-                <span
-                  class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-600">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -82,38 +66,34 @@
 
       <div class="mt-4">
         <div class="p-6 bg-white rounded-md shadow-md">
-          <h2 class="text-lg font-semibold text-gray-700 capitalize">
-            Account settings
-          </h2>
+          <h2 class="text-lg font-semibold text-gray-700 capitalize">Account settings</h2>
 
           <form @submit.prevent="register">
             <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
               <div>
                 <label class="text-gray-700" for="username">Username</label>
                 <input
+                  v-model="user.username"
                   class="w-full mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                   type="text"
-                  v-model="user.username"
                 />
               </div>
 
               <div>
-                <label class="text-gray-700" for="emailAddress"
-                  >Email Address</label
-                >
+                <label class="text-gray-700" for="emailAddress">Email Address</label>
                 <input
+                  v-model="user.email"
                   class="w-full mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                   type="email"
-                  v-model="user.email"
                 />
               </div>
 
               <div>
                 <label class="text-gray-700" for="password">Password</label>
                 <input
+                  v-model="user.password"
                   class="w-full mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                   type="password"
-                  v-model="user.password"
                 />
               </div>
 
@@ -122,9 +102,9 @@
                   >Password Confirmation</label
                 >
                 <input
+                  v-model="user.confirm"
                   class="w-full mt-2 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
                   type="password"
-                  v-model="user.confirm"
                 />
               </div>
             </div>
@@ -144,7 +124,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent, ref } from "vue";
+import { ref } from "vue";
 
 interface User {
   username: string;

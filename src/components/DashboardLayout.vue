@@ -14,7 +14,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import Sidebar from "./Sidebar.vue";
-import Header from "./Header.vue";
-</script>
+<script setup lang="ts"></script>

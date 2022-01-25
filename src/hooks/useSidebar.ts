@@ -1,9 +1,11 @@
 import { ref } from "vue";
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 
-export function useSidebar() {
+function useSidebar() {
   return {
-    isOpen
+    isOpen,
   };
 }
+
+export default useSidebar;

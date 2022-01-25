@@ -13,9 +13,8 @@
         <div class="px-6 py-4">
           <div class="mb-2 text-xl font-bold text-gray-900">The Coldest Sunset</div>
           <p class="text-base text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+            Maiores et perferendis eaque, exercitationem praesentium nihil.
           </p>
         </div>
         <div class="px-6 pt-4 pb-2">
@@ -63,9 +62,8 @@
               Can coffee make you a better developer?
             </div>
             <p class="text-base text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+              Maiores et perferendis eaque, exercitationem praesentium nihil.
             </p>
           </div>
           <div class="flex items-center">

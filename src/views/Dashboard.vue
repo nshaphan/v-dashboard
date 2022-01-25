@@ -5,9 +5,7 @@
     <div class="mt-4">
       <div class="flex flex-wrap -mx-6">
         <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
-          <div
-            class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm"
-          >
+          <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
             <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
               <svg
                 class="w-8 h-8 text-white"
@@ -50,9 +48,7 @@
         </div>
 
         <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
-          <div
-            class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm"
-          >
+          <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
             <div class="p-3 bg-blue-600 bg-opacity-75 rounded-full">
               <svg
                 class="w-8 h-8 text-white"
@@ -83,9 +79,7 @@
         </div>
 
         <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
-          <div
-            class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm"
-          >
+          <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
             <div class="p-3 bg-pink-600 bg-opacity-75 rounded-full">
               <svg
                 class="w-8 h-8 text-white"
@@ -153,9 +147,7 @@
 
             <tbody class="bg-white">
               <tr v-for="(u, index) in users" :key="index">
-                <td
-                  class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
-                >
+                <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 w-10 h-10">
                       <img
@@ -176,9 +168,7 @@
                   </div>
                 </td>
 
-                <td
-                  class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
-                >
+                <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
                   <div class="text-sm leading-5 text-gray-900">
                     {{ u.title }}
                   </div>
@@ -187,9 +177,7 @@
                   </div>
                 </td>
 
-                <td
-                  class="px-6 py-4 border-b border-gray-200 whitespace-nowrap"
-                >
+                <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
                   <span
                     class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full"
                     >{{ u.status }}</span
@@ -205,9 +193,7 @@
                 <td
                   class="px-6 py-4 text-sm font-medium leading-5 text-right border-b border-gray-200 whitespace-nowrap"
                 >
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900"
-                    >Edit</a
-                  >
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                 </td>
               </tr>
             </tbody>

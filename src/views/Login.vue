@@ -2,12 +2,7 @@
   <div class="flex items-center justify-center h-screen px-6 bg-gray-200">
     <div class="w-full max-w-sm p-6 bg-white rounded-md shadow-md">
       <div class="flex items-center justify-center">
-        <svg
-          class="w-10 h-10"
-          viewBox="0 0 512 512"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg class="w-10 h-10" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M364.61 390.213C304.625 450.196 207.37 450.196 147.386 390.213C117.394 360.22 102.398 320.911 102.398 281.6C102.398 242.291 117.394 202.981 147.386 172.989C147.386 230.4 153.6 281.6 230.4 307.2C230.4 256 256 102.4 294.4 76.7999C320 128 334.618 142.997 364.608 172.989C394.601 202.981 409.597 242.291 409.597 281.6C409.597 320.911 394.601 360.22 364.61 390.213Z"
             fill="#4C51BF"
@@ -25,36 +20,40 @@
       </div>
 
       <form class="mt-4" @submit.prevent="login">
-        <label class="block">
+        <label class="block" for="email">
           <span class="text-sm text-gray-700">Email</span>
           <input
+            id="email"
+            v-model="email"
             type="email"
             class="block w-full mt-1 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
-            v-model="email"
           />
         </label>
 
-        <label class="block mt-3">
+        <label class="block mt-3" for="password">
           <span class="text-sm text-gray-700">Password</span>
           <input
+            id="password"
+            v-model="password"
             type="password"
             class="block w-full mt-1 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
-            v-model="password"
           />
         </label>
 
         <div class="flex items-center justify-between mt-4">
           <div>
-            <label class="inline-flex items-center">
-              <input type="checkbox" class="text-indigo-600 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500" />
+            <label class="inline-flex items-center" for="remember-me">
+              <input
+                id="remember-me"
+                type="checkbox"
+                class="text-indigo-600 border-gray-200 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500"
+              />
               <span class="mx-2 text-sm text-gray-600">Remember me</span>
             </label>
           </div>
 
           <div>
-            <a
-              class="block text-sm text-indigo-700 fontme hover:underline"
-              href="#"
+            <a class="block text-sm text-indigo-700 fontme hover:underline" href="#"
               >Forgot your password?</a
             >
           </div>
